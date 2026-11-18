@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang Chủ - Lương Đình Thành Đạt | CNTT HCMUE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    :root {
+      --bg-cream: #f4efe6;
+      --card-bg: #faf7f2;
+      --accent-taupe: #8c735b;
+      --accent-dark: #6f5944;
+      --text-dark: #262524;
+      --text-muted: #524f4c;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #dcd6cc;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      color: var(--text-dark);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+
+    .portal-container {
+      width: 100%;
+      max-width: 780px;
+      background-color: var(--bg-cream);
+      border: 2px solid var(--accent-taupe);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+      padding: 44px 36px;
+      text-align: center;
+    }
+
+    .portal-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.8rem;
+      color: var(--accent-taupe);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .portal-subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 34px;
+    }
+
+    .page-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      text-align: left;
+    }
+
+    .page-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: var(--card-bg);
+      border: 1.5px solid var(--accent-taupe);
+      border-radius: 10px;
+      padding: 22px 24px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .page-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent-dark);
+      box-shadow: 0 8px 20px rgba(140, 115, 91, 0.22);
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .page-tag {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: var(--accent-taupe);
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+
+    .status-badge {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--accent-dark);
+    }
+
+    .page-card h2 {
+      font-size: 1.25rem;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .page-card p {
+      font-size: 0.94rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <main class="portal-container">
+    <h1 class="portal-title">Lương Đình Thành Đạt</h1>
+    <p class="portal-subtitle">
+      Sinh viên CNTT K52 – Trường Đại học Sư phạm TP.HCM | Bài tập Thiết kế Web
+    </p>
+
+    <div class="page-grid">
+      <!-- Link 1: CV -->
+      <a class="page-card" href="cv.html">
+        <div>
+          <div class="card-top">
+            <span class="page-tag">Bài 01</span>
+            <span class="status-badge">Đã hoàn thành →</span>
+          </div>
+          <h2>CV Cá Nhân</h2>
+          <p>
+            Trang giới thiệu bản thân, thành tích học thuật, kinh nghiệm gia sư và các dự án cá nhân.
+          </p>
+        </div>
+      </a>
+
+      <!-- Link 2: Hồ Cá -->
+      <a class="page-card" href="ho-ca.html">
+        <div>
+          <div class="card-top">
+            <span class="page-tag">Bài 02</span>
+            <span class="status-badge">Xem trang →</span>
+          </div>
+          <h2>Hồ Cá Vui Nhộn</h2>
+          <p>
+            Trang mô phỏng chuyển động dưới nước bằng HTML, CSS Animation và JavaScript.
+          </p>
+        </div>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
